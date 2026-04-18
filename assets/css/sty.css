@@ -1,0 +1,183 @@
+body{
+    background-color: #f3faff;
+    
+}
+.navbar{
+    /* background-color: #f3faff !important; */
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    opacity: .8;
+    background-color:  #f3faff !important;    
+}
+.navbar-brand{
+    color: #003f87;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+.navbar .container .collapse .navbar-nav a{
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+.navbar .container .btn{
+    background-color: #003f87;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    border-radius: 12px;
+    border-color: #000000;
+    padding: 7px 25px 7px 25px;
+}
+#main-div{
+/* border-radius: 20px; */
+/* padding-top: 100px; */
+width: 900px;
+    /* translate:0 100px; */
+    margin-top: 100px;
+    padding: 0;
+    border-radius: 20px;
+    border-style:none ;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    box-shadow: 0 0 9px 5px #003f8713;
+    
+
+}
+#main-div #half-right h3{
+    color: #003f87;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+#main-div #half-right{
+    background-color: rgb(255, 254, 254);
+    border-radius:20px 0 0 20px ;
+}
+#main-div #half-right form #submit{
+    width: 100%;
+    background-color: #003f87dc;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    border-radius: 12px;
+    border-style: none;
+    padding: 15px 25px 15px 25px;
+}
+#main-div #half-right #note{
+    text-align: center;
+}
+#main-div #half-right #note a{
+    text-decoration: none;
+    color: #003f87e8;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-size: 1rem;
+    font-style: normal;
+    
+}
+#main-div #half-right form input{
+    background-color: #83bcfc38;
+    padding: 10px;
+}
+#main-div #half-right form #user-type button{
+    background-color: #83bcfc38;
+    color: #000000;
+    padding: 12px 30px 12px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-style: none;
+}
+#main-div #half-left{
+    border-radius:0 20px 20px 0 ;
+    background-image: url(/assets/images/unnamed.png);
+}
+
+#main-div #half-left #text-div{
+    background-color: #003f87;
+    z-index: 1;
+    opacity: 0.8;
+    height: 100%;
+    border-radius:0 20px 20px 0 ;
+    
+}
+
+
+#main-div #half-left #text-div h1{
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-size: 2.5rem;
+    font-style: normal;
+    color: white;
+}
+#main-div #half-left #text-div p,#main-div #half-left #text-div #icons{
+    color: white;
+}
+#main-div #half-left #text-div h1{
+    padding: 200px 40px 30px 60px;
+    box-sizing: border-box;
+
+}
+#main-div #half-left #text-div p{
+    padding: 5px 60px 30px 60px;
+    box-sizing: border-box;
+
+}
+#main-div #half-left #text-div #icons{
+margin-right: 40px;
+}
+#main-div #half-left #text-div #icons p{
+padding-right: 5%;
+}
+
+section{
+    background-color:#f3faff;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center; 
+}
+section .container #main-text{
+    color: #003f87e8;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+section .container .d-flex a{
+    text-decoration: none;
+    margin: 10px;
+    color: #000000;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-size: 1rem;
+    font-style: normal;
+}
+section .container #end-text{
+    color: #000000e8;
+    margin: 10px;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-size: 1rem;
+    font-style: normal;
+}

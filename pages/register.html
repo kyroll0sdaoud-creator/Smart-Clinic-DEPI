@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/sty.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>حساب جديد</title>
+</head>
+<body>
+    <!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light Small shadow " dir="ltr">
+    <div class="container d-flex justify-content-around align-items-center">
+        <div class="navbar-brand m-2 " >عيادة الشفاء</div>
+        <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
+            <div class="navbar-nav">
+                <a class="nav-link " href="#">الرئيسية</a>
+                <a class="nav-link " href="#">خدماتنا</a>
+                <a class="nav-link " href="#">عن العيادة</a>
+                <a class="nav-link " href="#" >اتصل بنا</a>
+            </div>
+        </div>
+        <button class="btn btn-primary">تسجيل الدخول</button>
+    </div>
+</nav>
+<!-- end-navbar -->
+
+<div id="main-div" class="container d-flex ">
+    <div id="half-left" class="col-6 ">
+        
+        <div id="text-div">
+            <h1>انضم إلى مجتمعنا الطبي المتكامل</h1>
+            <p>نحن هنا لنقدم لك رعاية صحية تتسم بالدقة والاهتمام الإنساني. ابدأ رحلتك الصحية معنا اليوم بإنشاء حسابك الشخصي</p>
+            <div id="icons">
+                <div id="d-i-1" class="d-flex">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <p>خصوصية بياناتك هي أولويتنا القصوى</p>
+                </div>
+                <div id="d-i-2" class="d-flex">
+                    <i class="fa-regular fa-calendar-days"></i>  
+                    <p>حجز مواعيد فورية مع نخبة الأطباء</p>
+                </div>
+            </div>
+        </div> 
+        
+        
+    </div>
+
+
+    
+    <div id="half-right" class="col-6 p-5">
+        <h3>إنشاء حساب جديد</h3>
+        <p>يرجى إدخال بياناتك بدقة لتتمكن من الوصول لخدماتنا</p>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">الاسم الكامل</label>
+                <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="أدخل اسمك ثلاثي">
+            </div>
+            <div class="mb-3 d-flex">
+                <div class="m-2">
+                    <label for="email" class="form-label">البريد الإكتروني</label>
+                    <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                </div>
+                <div class="m-2">
+                    <label for="phone" class="form-label">رقم الجوال</label>
+                    <input type="text" class="form-control" id="phone">
+                </div>
+            </div>
+            <!--نوع المستخدم-->
+            <div id="user-type" class="mb-3 ">
+                <label class="form-label">نوع المستخدم </label>
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-primary">مريض</button>
+                    </div>
+                    <div class="btn-group me-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-secondary">طبيب</button>
+                    </div>
+                    <div class="btn-group me-2" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-info">إستقبال</button>
+                    </div>
+                </div>
+            </div>
+            <!-- نهاية نوع المستخدم -->
+            <div class="mb-3 d-flex">
+                <div class="m-2">
+                    <label for="pass" class="form-label"> كلمة المرور</label>
+                    <input type="email" class="form-control" id="pass" >
+                </div>
+                <div class="m-2">
+                    <label for="check-pass" class="form-label">تأكيد كلمة المرور </label>
+                    <input type="text" class="form-control" id="check-pass">
+                </div>
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary mb-4">إنشاء حساب جديد</button>
+        </form>
+        <p id="note">لديك حساب بالفعل؟<a href="#">تسجيل الدخول</a></p>
+    </div>
+</div>
+
+
+
+<section id="footer" >
+    <div class="container">
+        <div>
+            <h3 id="main-text">عيادة الشفاء</h3>
+        </div> 
+        <div class="d-flex justify-content-center">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">الشروط والأحكام</a>
+            <a href="#">الشهادات الطبية</a>
+        </div> 
+        <div>
+            <h3 id="end-text">© 2026 عيادة الشفاء. جميع الحقوق محفوظة. مرخص من وزارة الصحة.</h3>
+        </div> 
+    </div>
+</section>
+
+
+<script src="/assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

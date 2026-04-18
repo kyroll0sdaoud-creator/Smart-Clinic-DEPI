@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/doctor.css">
+</head>
+
+<body dir="rtl">
+    <nav class="navbar" dir="ltr">
+        <div class="hello"></div>
+        <div class="clinic-name">
+            <a class="navbar-brand" href="#">عيادة الشفاء</a>
+        </div>
+    </nav>
+
+    <div class=" container-fluid">
+
+        <div class="row" dir="rtl">
+            <div class="naVV col-2">
+                <div class="hello-doctor">
+                    <div class="profile_img mt-5">
+                        <img src="../assets/images/ii2.jpg" class="prof-img">
+                    </div>
+                </div>
+                <div class="hello-Doctor">
+                    <h5> مرحبًا دكتور</h5>
+                    <span>كيرلس</span>
+                </div>
+                <div id="list-example" class="list-group  mt-5">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">المواعيد</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">سجل المرضى </a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">الوصف الطبي</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">تسجيل الخروج</a>
+                </div>
+            </div>
+
+            <div class="container-fluid col-8 " dir="rtl">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                    class="scrollspy-example" tabindex="0">
+                    <div id="list-item-1" class="container-fluid row">
+
+                        <div class="clock col-lg-7">
+                            <div class="container-appointment mt-4">
+                                <!-- <h5 class="mt-5 mb-4 fw-bold">جدول مواعيد اليوم </h5> -->
+                                <div class="appoint-header">
+                                    <h5 class="mb-0 fw-bold"> مواعيد اليوم</h5>
+                                </div>
+                                <div id="appointments-list"></div>
+
+                                <button class="btn_all_appoint btn btn-primary w-100 mt-2 " data-bs-toggle="collapse"
+                                    data-bs-target="#moreAppointments">
+                                    عرض المزيد
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 mt-4 manger">
+                            <div class="card card-custom">
+                                <div class="card-body card-body-custom">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="mb-0 fw-bold">إدارة التوافر</h5>
+                                        <i class="bi bi-clock fs-5"></i>
+                                    </div>
+
+                                    <p class="small opacity-75 mb-4">
+                                        قم بتعديل ساعات العمل المتاحة للمرضى اليوم
+                                    </p>
+
+                                    <div class="d-flex justify-content-between align-items-center section-box mb-3">
+                                        <span>الفترة الصباحية</span>
+                                        <div class="form-check form-switch m-0">
+                                            <input class="form-check-input" type="checkbox">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center section-box mb-4">
+                                        <span>الفترة المسائية</span>
+                                        <div class="form-check form-switch m-0">
+                                            <input class="form-check-input" type="checkbox">
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-custom">
+                                        تحديث الحالة
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="custom-form mt-4">
+
+                                <div class="mb-4">
+                                    <label class="form-label">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control custom-input"
+                                        placeholder="name@example.com">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">ملاحظات</label>
+                                    <textarea class="form-control custom-input" rows="3"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="list-item-2" class="container mt-5">
+                        <div class="p-4 rounded-4" style="background: var(--surface-low);">
+
+                            <!-- header -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="fw-bold m-0">سجلات المرضى</h5>
+
+                                <div class="position-relative">
+                                    <input class="form-control rounded-3 ps-5" placeholder="ابحث باسم المريض...">
+                                    <i
+                                        class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div
+                                class="patient-item d-flex align-items-center justify-content-between mb-3 p-3 rounded-4">
+                                <i class="bi bi-chevron-left"></i>
+
+                                <div class="flex-grow-1 me-3">
+                                    <div class="fw-bold">باسم سمرة</div>
+                                    <small>آخر زيارة: 12 مايو 2024</small>
+                                </div>
+
+                                <div class="avatar blue">ب س</div>
+                            </div>
+                            <div
+                                class="patient-item d-flex align-items-center justify-content-between mb-3 p-3 rounded-4">
+                                <i class="bi bi-chevron-left"></i>
+                                <div class="flex-grow-1 me-3">
+                                    <div class="fw-bold">باسم يوسف</div>
+                                    <small>آخر زيارة: 12 مايو 2024</small>
+                                </div>
+                                <div class="avatar blue"> ب ي</div>
+                            </div>
+                            <div
+                                class="patient-item d-flex align-items-center justify-content-between mb-3 p-3 rounded-4">
+                                <i class="bi bi-chevron-left"></i>
+                                <div class="flex-grow-1 me-3">
+                                    <div class="fw-bold">بسمة يسري</div>
+                                    <small>آخر زيارة: 12 مايو 2024</small>
+                                </div>
+                                <div class="avatar blue"> ب ي</div>
+                            </div>
+
+                            <div class="text-center mt-4 fw-bold view-all">
+                                عرض جميع الملفات
+                            </div>
+
+                        </div>
+                    </div>
+                    <p>...</p>
+
+                    <div id="list-item-3" class="prescription-card p-4 mt-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div>
+                                <h4 class="fw-bold mb-1">وصفة طبية جديدة</h4>
+                                <small class="text-muted">المريض الحالي: زياد عبدالله</small>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">التشخيص السريري</label>
+                                <input class="form-control custom-input" placeholder="مثلاً: التهاب المعدة">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">تاريخ المتابعة</label>
+                                <div class="position-relative">
+                                    <input type="date" class="form-control custom-input">
+                                    <i
+                                        class="bi bi-calendar position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">الأدوية والعلاجات</label>
+                            <textarea class="form-control custom-input" rows="3"
+                                placeholder="اكتب أسماء الأدوية والجرعات هنا..."></textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">تعليمات النظام الغذائي والملاحظات</label>
+                            <textarea class="form-control custom-input large-textarea"
+                                placeholder="اكتب التعليمات هنا..."></textarea>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <button class="btn btn-primary custom-btn">إصدار الوصفة</button>
+                            <button class="btn btn-secondary custom-btn-outline">مسودة</button>
+                        </div>
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

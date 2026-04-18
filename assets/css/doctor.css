@@ -1,0 +1,572 @@
+:root {
+    --nav: #002d58;
+    --bg: #f3faff;
+    --on-bg: #071e27;
+    --primary: #003f87;
+    --on-primary: #ffffff;
+    --primary-container: #0056b3;
+    --on-primary-container: #bbd0ff;
+
+    --secondary: #006a62;
+    --on-secondary: #ffffff;
+    --secondary-container: #81f3e5;
+    --on-secondary-container: #006f66;
+
+    --tertiary: #004850;
+    --on-tertiary: #ffffff;
+    --tertiary-container: #00626c;
+    --on-tertiary-container: #61e0f2;
+
+    --error: #ba1a1a;
+    --on-error: #ffffff;
+    --error-container: #ffdad6;
+    --on-error-container: #93000a;
+
+    --surface: #f3faff;
+    --on-surface: #071e27;
+    --surface-variant: #cfe6f2;
+    --on-surface-variant: #424752;
+
+    --outline: #727784;
+    --outline-variant: #c2c6d4;
+
+    --inverse-surface: #1e333c;
+    --inverse-on-surface: #dff4ff;
+    --inverse-primary: #acc7ff;
+
+    --surface-lowest: #ffffff;
+    --surface-low: #e6f6ff;
+    --surface-high: #d5ecf8;
+    --surface-highest: #cfe6f2;
+    --surface-dim: #c7dde9;
+    --surface-bright: #f3faff;
+    --surface-container: #dbf1fe;
+
+    --primary-fixed: #d7e2ff;
+    --primary-fixed-dim: #acc7ff;
+    --on-primary-fixed: #001a40;
+    --on-primary-fixed-variant: #004491;
+
+    --secondary-fixed: #84f5e8;
+    --secondary-fixed-dim: #66d9cc;
+    --on-secondary-fixed: #00201d;
+    --on-secondary-fixed-variant: #005049;
+
+    --tertiary-fixed: #93f1ff;
+    --tertiary-fixed-dim: #56d7e9;
+    --on-tertiary-fixed: #001f23;
+    --on-tertiary-fixed-variant: #004f57;
+
+    --surface-tint: #115cb9;
+}
+
+body {
+    background-color: var(--primary-fixed);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+/* 
+.navbar {
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+
+    box-shadow: var(--shadow-light);
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--text-main);
+} */
+
+
+.profile_img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    /* position: absolute;
+    right:150px; */
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid color-mix(in srgb, rgb(255, 255, 255), transparent 85%);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: floatIn 1.4s ease-out forwards;
+
+}
+
+.profile_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%) contrast(110%) brightness(95%);
+    border-radius: 25px;
+
+
+}
+
+.clock {
+    position: relative;
+    top: 70px;
+}
+
+.container-appointment {
+    height: 100%;
+    position: relative;
+    background: var(--surface-low);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--outline-variant);
+}
+
+.appointment-card:hover {
+    background-color: var(--surface-high);
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.naVV {
+    background-color: var(--primary-fixed);
+}
+
+.manger {
+    position: relative;
+    right: 50px;
+}
+
+
+.manger .card-custom {
+    background: var(--tertiary);
+    color: var(--on-tertiary);
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.manger .card-body-custom {
+    padding: 1.5rem;
+}
+
+.manger .section-box {
+    background: color-mix(in srgb, var(--surface), transparent 85%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: var(--on-surface);
+}
+
+.manger .btn-custom {
+    width: 100%;
+    font-weight: bold;
+    background: var(--secondary-container);
+    color: var(--on-secondary-container);
+    border: none;
+    transition: 0.3s;
+}
+
+.manger .btn-custom:hover {
+    background: var(--secondary-fixed-dim);
+    color: var(--on-secondary-fixed);
+}
+
+#list-example {
+    background: transparent;
+    border: none;
+}
+
+#list-example .list-group-item {
+    background: transparent;
+    border: none;
+    color: var(--on-primary-fixed-variant);
+    border-radius: 12px;
+    margin-bottom: 8px;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+}
+
+/* Hover */
+#list-example .list-group-item:hover {
+    background: var(--surface-high);
+    color: var(--on-surface);
+    transform: translateX(-5px);
+}
+
+/* Active */
+#list-example .list-group-item.active {
+    background: var(--primary);
+    color: var(--on-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#list-example .list-group-item::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 0%;
+    background: var(--primary);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#list-example .list-group-item:hover::before {
+    height: 70%;
+}
+
+#list-example .list-group-item.active::before {
+    height: 70%;
+}
+
+
+.custom-form {
+    background: var(--surface-low);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.custom-form .form-label {
+    color: var(--on-surface);
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.custom-input {
+    background: var(--surface-highest);
+    border: 1px solid var(--outline-variant);
+    border-radius: 12px;
+    padding: 10px 14px;
+    color: var(--on-surface);
+    transition: 0.3s;
+}
+
+.custom-input::placeholder {
+    color: var(--outline);
+}
+
+.custom-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary), transparent 80%);
+    background: var(--surface);
+}
+
+.custom-input:hover {
+    border-color: var(--primary-fixed-dim);
+}
+
+textarea.custom-input {
+    resize: none;
+    height: 150px;
+}
+
+
+
+.patient-item {
+    background: var(--surface-highest);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.patient-item:hover {
+    background: var(--surface-high);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.avatar.blue {
+    background: var(--primary-fixed);
+    color: var(--primary);
+}
+
+.view-all {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+#appointments-list {
+    position: relative;
+}
+
+.appointment-card {
+    background: var(--surface-highest);
+    border-radius: 16px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.appointment-card:hover {
+    background: var(--surface-high);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.time-text {
+    font-weight: bold;
+    color: var(--primary);
+    min-width: 70px;
+}
+
+.vertical-divider {
+    width: 2px;
+    height: 40px;
+    background: var(--outline-variant);
+}
+
+.avatar-sm {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-fixed);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.appointment-card small {
+    color: var(--outline);
+}
+
+.status-active {
+    border-left: 4px solid var(--secondary);
+}
+
+.status-delayed {
+    border-left: 4px solid var(--error);
+}
+
+.status-normal {
+    border-left: 4px solid var(--primary-fixed-dim);
+}
+
+
+.prescription-card {
+    background: var(--surface-low);
+    border-radius: 20px;
+    border: 1px solid var(--outline-variant);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background: var(--primary-fixed);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.custom-input {
+    background: var(--surface-highest);
+    border: 1px solid var(--outline-variant);
+    border-radius: 12px;
+    padding: 10px 14px;
+    color: var(--on-surface);
+    transition: 0.3s;
+}
+
+.custom-input::placeholder {
+    color: var(--outline);
+}
+
+.custom-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary), transparent 80%);
+    background: var(--surface);
+}
+
+.large-textarea {
+    height: 120px;
+    resize: none;
+}
+
+.custom-btn {
+    background: var(--primary);
+    color: var(--on-primary);
+    border-radius: 12px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.custom-btn:hover {
+    background: var(--primary-container);
+}
+
+.custom-btn-outline {
+    background: var(--surface-high);
+    color: var(--on-surface);
+    border-radius: 12px;
+    border: none;
+}
+
+.custom-btn-outline:hover {
+    background: var(--surface-highest);
+}
+
+.naVV {
+    position: sticky;
+    top: 7px;
+    height: calc(100vh - 70px);
+    z-index: 1020;
+    overflow-y: auto;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.hello {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.hello::before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    box-shadow: -50px -50px var(--nav);
+}
+
+.navbar {
+    position: relative;
+    background-color: var(--nav);
+    height: 90px;
+    width: 98.8%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 50px 0;
+    box-sizing: border-box;
+    right: 20px;
+}
+
+.clinic-name a{
+    color: bisque;
+}
+.clinic-name{
+    position: absolute;
+    right: 50px;
+}
+
+.container-appointment {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#appointments-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.btn_all_appoint {
+    margin-top: auto;
+}
+
+
+.appoint-header {
+    padding: 24px;
+    background: linear-gradient(135deg, 
+        var(--surface-low) 0%, 
+        var(--surface) 100%);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--primary);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.appoint-header h5 {
+    margin: 0;
+    color: var(--on-surface);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+
+
+.btn_all_appoint {
+    background: var(--surface-high);
+    border: 2px solid var(--primary-fixed-dim);
+    color: var(--primary);
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.btn_all_appoint:hover {
+    background: var(--primary);
+    color: var(--on-primary);
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(0, 63, 135, 0.2);
+}
+
+.hello-Doctor {
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 20px;
+    margin: 20px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.hello-Doctor h5 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+}
+
+
+.hello-Doctor span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-top: 4px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+

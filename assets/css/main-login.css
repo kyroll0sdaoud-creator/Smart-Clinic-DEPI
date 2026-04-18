@@ -1,0 +1,182 @@
+:root {
+    --primary: #003f87;
+    --primary-hover: #0056b3;
+    --primary-light: #e6f0ff;
+
+    --text-main: #003f87;
+    --text-muted: #64748b;
+
+    --white: #ffffff;
+    --nav-bg: rgba(243, 250, 255, 0.7);
+
+    --shadow-light: 0 2px 10px rgba(0,0,0,0.05);
+    --landing-heading:#003f87;
+}
+body {
+   font-family: "Cairo", sans-serif;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+   background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+    
+    box-shadow: var(--shadow-light);
+}
+
+.navbar-brand{
+   font-weight: 900;
+ font-size: 24px;
+ color: var(--text-main);
+}
+
+
+
+
+.hero{
+  background:
+ url("../images/hero_background.png")  no-repeat ;
+ 
+  background-size: cover;
+  background-position: center;
+ min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+
+#span{
+    color: #006A62;
+}
+.landing h1{
+    color:var(--landing-heading) ;
+    font-size: 36px;
+}
+
+.landing{
+ background-color:rgb(230 246 255 );
+ 
+
+}
+.hero h1{
+    font-size: 70px;
+    color: #003f87;
+
+}
+.hero p{
+    font-size: 18px;
+     max-width: 500px;
+
+}
+#hero-btn1{
+
+background-color: #003f87;
+border: none;
+}
+#hero-btn1:hover{
+    background-color: #0056b3;
+}
+ 
+#hero-btn2{
+    background-color: #cfe6f2;
+    color: #003f87;
+    border: none;
+    
+    
+}
+#nav-btn1{
+    background-color: #003f87;
+    border: none;
+
+}
+ #nav-btn2{
+    color: #003f87;
+ }
+ #nav-btn1:hover {
+  background-color: #0056b3; 
+}
+
+.card {
+  background: #f8fafc;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s ease; 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:  0  15px 30px rgb(29, 8, 8);
+}
+#link-card {
+  color: #003f87;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#link-card:hover {
+  color: #0056b3;
+  letter-spacing: 1px;
+}
+.services{
+  background:#f3faff ;
+
+}
+#services-text h3{
+   color: #006A62;
+}
+#services-text h2{
+  color: #003f87;
+  font-size: 36px;
+}
+#card-bg{
+  background-color: #81f3f5;
+
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.story h2{
+  color: var(--primary);
+}
+.story{
+  background-color: #e6f6ff;
+}
+#profile-pic{
+  width: 50px;
+  height: 50px;
+}
+.footer{
+
+  background-color:#0d384d ;
+}
+.footer span{
+  color: greenyellow ;
+}
+.loginpage{
+     background-color: #a0c9bc;
+
+}
+.loginpage a {
+  text-decoration: none;
+}
+.loginpage a:hover {
+
+  text-decoration: underline;
+}
+.loginfooter{
+  background-color: #0d384d;
+}
+.navbar .nav-link {
+  transition: 0.1s;
+ ;
+}
+
+.navbar .nav-link:hover {
+  color: #0d6efd ;
+ 
+}

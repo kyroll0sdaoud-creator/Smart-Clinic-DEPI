@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/main-login.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>تسجيل الدخول</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="/index.html">عيادة الشفاء</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span>
+            <i class="fa-solid fa-bars-staggered"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link p-2 p-lg-3"
+                aria-current="page"
+                href="/index.html#hero"
+                >الرئسيه</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link p-2 p-lg-3"
+                aria-current="page"
+                href="/index.html#services"
+                >خدمتنا</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link p-2 p-lg-3"
+                aria-current="page"
+                href="/index.html#users"
+                >المستخدمين</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link p-2 p-lg-3"
+                aria-current="page"
+                href="/index.html#success"
+                >قصص نجاح مرضانا</a
+              >
+            </li>
+          </ul>
+          <a
+            href="login.html"
+            class="btn btn-primary px-4 rounded-3 fw-bold"
+            id="nav-btn1"
+          >
+            تسجيل الدخول
+          </a>
+          <a
+            href="register.html"
+            class="btn btn-outline-primary px-4 me-3 rounded-3 fw-bold"
+            id="nav-btn2"
+          >
+            حساب جديد
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="loginpage" id="login">
+      <div
+        class="container d-flex justify-content-center align-items-center min-vh-100"
+      >
+        <div class="row border rounded-4 p-4 bg-white shadow box-area">
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <div class="image mb-3">
+              <img
+                class="img-fluid rounded-4"
+                src="../assets/images/login.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text">
+              <h1 class="fw-bold" style="color: #003f87">مرحباً بك مجدداً</h1>
+              <p class="text-muted">تسجيل الدخول للمتابعة</p>
+            </div>
+            <form action="">
+              <div class="input mb-3">
+                <label for="email" class="mb-2">البريد الإلكتروني</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg bg-light fs-6 text-muted"
+                  placeholder="example@clinic.com"
+                />
+              </div>
+              <div class="input mb-3">
+                <label for="email" class="mb-2"> كلمة المرور </label>
+                <input
+                  type="password"
+                  class="form-control form-control-lg bg-light fs-6 text-muted"
+                  placeholder="password"
+                />
+              </div>
+              <div class="input mb-5 d-flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="formcheck"
+                  />
+                  <label
+                    for="formcheck"
+                    class="form-check-label text-secondary"
+                  >
+                    <small>تذكرني على هذا الجهاز</small></label
+                  >
+                </div>
+                <div class="forgot">
+                  <small
+                    ><a href="" class="fw-bold">نسيت كلمة المرور؟ </a></small
+                  >
+                </div>
+              </div>
+              <div class="input mb-3">
+                <button class="btn btn-lg btn-primary w-100">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i> دخول
+                </button>
+              </div>
+              <div class="d-flex justify-content-center">
+                <p>
+                  ليس لديك حساب؟
+                  <a href="" class="fw-bold">أنشئ حساباً جديداً</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="loginfooter" id="footer">
+      <div class="container p-4 text-center text-white">
+        <i
+          class="fa-solid fa-heart-pulse display-3 pb-4"
+          style="color: rgb(29, 98, 216)"
+        ></i>
+        <h3 class="mb-5 fw-bold">عيادة الشفاء</h3>
+        <p>© 2026 عيادة الشفاء. جميع الحقوق محفوظة. مرخص من وزارة الصحة.</p>
+      </div>
+    </section>
+
+    <script src="../assets/js/all.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة تحكم المريض</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-profile text-center mb-4">
+    <img src="https://i.pravatar.cc/80?img=33" alt="avatar" class="mb-2">
+    <h6 class="text-white fw-bold mb-0">مرحباً بك</h6>
+    <small class="text-white-50">لوحة التحكم الطبية</small>
+  </div>
+
+  <ul class="nav flex-column mb-auto">
+    <li class="nav-item mb-1">
+      <a class="nav-link active" href="#section-dashboard">
+        <i class="fa-solid fa-table-cells-large"></i> لوحة التحكم
+      </a>
+    </li>
+    <li class="nav-item mb-1">
+      <a class="nav-link" href="#">
+        <i class="fa-solid fa-house"></i> الصفحة الرئيسيه
+      </a>
+    </li>
+    <li class="nav-item mb-1">
+      <a class="nav-link" href="#section-appointments">
+        <i class="fa-solid fa-calendar-days"></i> المواعيد
+      </a>
+    </li>
+    <li class="nav-item mb-1">
+      <a class="nav-link" href="#section-records">
+        <i class="fa-solid fa-folder-open"></i> السجلات الطبية
+      </a>
+    </li>
+    <li class="nav-item mb-1">
+      <a class="nav-link" href="#section-he">
+        <i class="fa-solid fa-file-prescription"></i> الوصفات الإلكترونية
+      </a>
+    </li>
+  </ul>
+
+  <div class="mt-auto d-flex flex-column gap-2">
+    <button class="btn-book"><i class="fa-solid fa-plus me-2"></i> حجز موعد جديد</button>
+    <a href="#" class="sidebar-link"><i class="fa-solid fa-headset"></i> الدعم الفني</a>
+    <a href="#" class="sidebar-link logout"><i class="fa-solid fa-right-from-bracket"></i> تسجيل الخروج</a>
+  </div>
+</div>
+
+<div class="main-content">
+
+  <div class="topbar text-center">
+    <h5 class="fw-bold mb-0">لوحة تحكم المريض</h5>
+    <small class="text-secondary">مرحباً أحمد، نتمنى لك وافر الصحة والعافية اليوم.</small>
+  </div>
+
+  <div id="section-dashboard">
+    <div class="row g-3 align-items-stretch">
+
+      <div class="col-lg-4">
+        <div class="card-box d-flex flex-column align-items-center text-center gap-3">
+          <img src="https://i.pravatar.cc/80?img=33" alt="patient" class="patient-avatar">
+          <div>
+            <h6 class="fw-bold mb-1" style="font-size:16px;">أحمد بن محمد بن سلمان</h6>
+            <small class="text-secondary">ID: #SH-512</small>
+          </div>
+          <div class="d-flex gap-2 w-100">
+            <div class="badge-box">
+              <span class="lbl">العمر</span>
+              <span class="val">42 سنة</span>
+            </div>
+            <div class="badge-box">
+              <span class="lbl">فصيلة الدم</span>
+              <span class="val">O+</span>
+            </div>
+          </div>
+          <div class="d-flex gap-2 w-100">
+            <button class="btn-light-custom"><i class="fa-solid fa-comment-medical me-1"></i> تحدث مع ممرض</button>
+            <button class="btn-light-custom"><i class="fa-solid fa-file-lines me-1"></i> طلب تقرير</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card-box d-flex flex-column gap-3">
+          <h6 class="fw-bold mb-0">
+            <i class="fa-solid fa-bell text-warning me-2"></i> تنبيهات هامة
+          </h6>
+          <div class="alert-item green">
+            <div class="alert-title">
+              <i class="fa-solid fa-flask text-success me-1"></i> نتائج التحاليل جاهزة
+            </div>
+            <small class="text-secondary">تم رفع نتائج فحص الدم الشامل في ملفك الطبي.</small>
+          </div>
+          <div class="alert-item yellow">
+            <div class="alert-title">
+              <i class="fa-solid fa-pills text-warning me-1"></i> تجديد وصفة الدواء
+            </div>
+            <small class="text-secondary">تنتهي صلاحية دواء "Lipitor" خلال يومين.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4" id="section-appointments">
+        <div class="appt-card">
+          <span class="appt-badge">الموعد القادم</span>
+          <div>
+            <div style="font-size:22px;font-weight:900;">د. سارة المنصور</div>
+            <div style="font-size:13px;opacity:.8;">استشاري أمراض القلب</div>
+          </div>
+          <div class="d-flex gap-2 flex-wrap">
+            <div class="appt-meta"><i class="fa-regular fa-clock"></i> 10:30 صباحاً</div>
+            <div class="appt-meta"><i class="fa-regular fa-calendar"></i> 15 أكتوبر 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="section-records" class="records-section">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h4 class="fw-bold mb-1">السجلات الطبية</h4>
+        <small class="text-secondary">الملف الطبي الكامل للمريض</small>
+      </div>
+      <div>
+        <button class="he-btn">
+          <i class="fa-solid fa-download"></i> تحميل بصيغة PDF
+        </button>
+      </div>
+    </div>
+
+    <p style="font-size:14px; line-height:2;">
+      المريض أحمد بن محمد العتيبي، عمره 42 سنة، يعاني من مرض قصور الشريان التاجي منذ عام 2019، وتم تشخيصه بارتفاع ضغط الدم وارتفاع الكوليسترول في نفس العام. أجرى المريض عملية قسطرة قلبية في مارس 2021 لتوسيع شريان مسدود، وتمت العملية بنجاح دون مضاعفات. كما أجرى عملية تركيب دعامة (Stent) في الشريان الأيسر الأمامي النازل خلال نفس الجلسة.
+    </p>
+    <p style="font-size:14px; line-height:2;">
+      يتابع المريض بشكل دوري كل ثلاثة أشهر مع د. سارة المنصور استشاري أمراض القلب. آخر فحص لتخطيط القلب أظهر استقراراً في الحالة مع تحسن ملحوظ في وظيفة البطين الأيسر. نتائج تحليل الدم الشامل الأخيرة تشير إلى أن مستوى الكوليسترول الكلي في حدود الطبيعي بفضل الالتزام بالدواء والنظام الغذائي.
+    </p>
+    <p style="font-size:14px; line-height:2;">
+      يأخذ المريض حالياً دواء Lipitor (Atorvastatin) 20mg يومياً للسيطرة على الكوليسترول، ودواء Concor (Bisoprolol) 5mg صباحاً لتنظيم ضربات القلب وضغط الدم. يُنصح المريض بالاستمرار في النظام الغذائي الصحي وممارسة المشي 30 دقيقة يومياً، وتجنب الإجهاد الشديد والتدخين.
+    </p>
+  </div>
+
+  <div id="section-he" class="he-section">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h4 class="fw-bold mb-1">وصفة طبية إلكترونية</h4>
+        <small class="text-secondary">آخر تحديث: 10 أكتوبر 2024 بواسطة د. سارة المنصور</small>
+      </div>
+      <div>
+        <button class="he-btn">
+          <i class="fa-solid fa-download"></i> تحميل بصيغة PDF
+        </button>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-lg-8">
+        <p class="fw-bold text-secondary mb-3" style="font-size:13px;">الأدوية المقررة</p>
+        <p>Lipitor (Atorvastatin) — 20mg — حبة واحدة يومياً قبل النوم</p>
+        <p>Concor (Bisoprolol) — 5mg — حبة واحدة صباحاً</p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="d-flex flex-column gap-3">
+          <div class="extra-card">
+            <h6><i class="fa-solid fa-utensils me-2" style="color:#1a6fb5;"></i> تعليمات النظام الغذائي</h6>
+            <ul>
+              <li>تقليل كمية الأملاح في الطعام.</li>
+              <li>الإكثار من شرب الماء (8 أكواب).</li>
+              <li>تجنب الدهون المشبعة.</li>
+            </ul>
+          </div>
+          <div class="extra-card">
+            <h6><i class="fa-regular fa-calendar-check me-2" style="color:#1a6fb5;"></i> الزيارة القادمة</h6>
+            <div class="next-date">15 نوفمبر 2024</div>
+            <div class="next-desc">مراجعة دورية واختبار جهد</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bar d-flex align-items-center justify-content-between flex-wrap gap-2">
+    <div class="d-flex gap-3">
+      <a href="#">الشروط والأحكام</a>
+      <a href="#">سياسة الخصوصية</a>
+    </div>
+    <div class="brand">عيادة الشفاء</div>
+    <span>© 2024 عيادة الشفاء الطبية. جميع الحقوق محفوظة.</span>
+  </div>
+
+</div>
+</body>
+</html>

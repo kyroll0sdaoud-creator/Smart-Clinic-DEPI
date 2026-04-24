@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>لوحة تحكم الطبيب</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/doctor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body dir="rtl">
@@ -57,40 +59,43 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-5 mt-4 manger">
-                            <div class="card card-custom">
-                                <div class="card-body card-body-custom">
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h5 class="mb-0 fw-bold">إدارة التوافر</h5>
-                                        <i class="bi bi-clock fs-5"></i>
-                                    </div>
 
-                                    <p class="small opacity-75 mb-4">
-                                        قم بتعديل ساعات العمل المتاحة للمرضى اليوم
-                                    </p>
-
-                                    <div class="d-flex justify-content-between align-items-center section-box mb-3">
-                                        <span>الفترة الصباحية</span>
-                                        <div class="form-check form-switch m-0">
-                                            <input class="form-check-input" type="checkbox">
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center section-box mb-4">
-                                        <span>الفترة المسائية</span>
-                                        <div class="form-check form-switch m-0">
-                                            <input class="form-check-input" type="checkbox">
-                                        </div>
-                                    </div>
-
-                                    <button class="btn btn-custom">
-                                        تحديث الحالة
-                                    </button>
+                        <div class="col-lg-5 mt-4">
+                            <div class="availability-panel">
+                                <div class="panel-header">
+                                    <h5><i class="bi bi-lightning-charge-fill text-warning me-2"></i> فترة العمل
+                                    </h5>
+                                    <p>تحكم في ظهورك للمرضى الآن</p>
                                 </div>
+
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="morning-toggle" class="d-none" checked>
+                                    <label for="morning-toggle" class="period-tab">
+                                        <div class="period-icon"><i class="bi bi-sun"></i></div>
+                                        <div class="period-info">
+                                            <span class="name">صباحاً</span>
+                                            <span class="time">9:00 - 14:00</span>
+                                        </div>
+                                        <div class="status-dot"></div>
+                                    </label>
+
+                                    <input type="checkbox" id="evening-toggle" class="d-none">
+                                    <label for="evening-toggle" class="period-tab">
+                                        <div class="period-icon"><i class="bi bi-moon-stars"></i></div>
+                                        <div class="period-info">
+                                            <span class="name">مساءً</span>
+                                            <span class="time">17:00 - 22:00</span>
+                                        </div>
+                                        <div class="status-dot"></div>
+                                    </label>
+                                </div>
+
+                                <button class="update-pulse-btn">
+                                    <span>تثبيت الحالة</span>
+                                </button>
                             </div>
-
+                            <!--  note for reception  -->
                             <div class="custom-form mt-4">
-
                                 <div class="mb-4">
                                     <label class="form-label">البريد الإلكتروني</label>
                                     <input type="email" class="form-control custom-input"
@@ -101,108 +106,122 @@
                                     <label class="form-label">ملاحظات</label>
                                     <textarea class="form-control custom-input" rows="3"></textarea>
                                 </div>
+                                <button class="btn-done-message">
+                                    <i class="fa-solid fa-paper-plane ms-2"></i>
+                                </button>
 
                             </div>
                         </div>
                     </div>
 
 
+
+
                     <div id="list-item-2" class="container mt-5">
-                        <div class="p-4 rounded-4" style="background: var(--surface-low);">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="search-sidebar p-4 shadow-sm bg-white"
+                                    style="border-radius: 24px; border: 1px solid var(--surface-high);">
+                                    <h5 class="mb-4 fw-bold"><i class="bi bi-search me-2"></i> بحث عن مريض</h5>
 
-                            <!-- header -->
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <h5 class="fw-bold m-0">سجلات المرضى</h5>
+                                    <div class="mb-4">
+                                        <input type="text" id="patientSearchInput" class="form-control custom-input"
+                                            placeholder="اكتب اسم المريض أو رقم الملف...">
+                                    </div>
 
-                                <div class="position-relative">
-                                    <input class="form-control rounded-3 ps-5" placeholder="ابحث باسم المريض...">
-                                    <i
-                                        class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                                    <div class="search-results-list" id="searchResults"
+                                        style="max-height: 400px; overflow-y: auto;">
+                                        <div
+                                            class="patient-search-item p-3 mb-2 border rounded-3 cursor-pointer active-result">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="avatar-sm">ز ع</div>
+                                                <div>
+                                                    <h6 class="mb-0">زياد عبدالله</h6>
+                                                    <small class="text-muted">#MR-2044</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <!-- item -->
-                            <div
-                                class="patient-item d-flex align-items-center justify-content-between mb-3 p-3 rounded-4">
-                                <i class="bi bi-chevron-left"></i>
+                            <div class="col-lg-8">
+                                <div class="records-container" id="activePatientRecord">
+                                    <div class="patient-record-card w-100">
+                                        <div class="record-header">
+                                            <div class="record-avatar">ز ع</div>
+                                            <div class="record-info">
+                                                <h6 id="display-name">زياد عبدالله</h6>
+                                                <small id="display-id">رقم الملف: #MR-2044</small>
+                                            </div>
+                                        </div>
 
-                                <div class="flex-grow-1 me-3">
-                                    <div class="fw-bold">باسم سمرة</div>
-                                    <small>آخر زيارة: 12 مايو 2024</small>
-                                </div>
+                                        <div class="record-stats">
+                                            <span class="stat-pill"><i class="bi bi-gender-male"></i> ذكر</span>
+                                            <span class="stat-pill"><i class="bi bi-calendar-event"></i> 28 سنة</span>
+                                            <span class="stat-pill" style="background: #fff4e5; color: #b45d00;">حساسية
+                                            </span>
+                                        </div>
 
-                                <div class="avatar blue">ب س</div>
-                            </div>
-                            <div
-                                class="patient-item d-flex align-items-center justify-content-between mb-3 p-3 rounded-4">
-                                <i class="bi bi-chevron-left"></i>
-                                <div class="flex-grow-1 me-3">
-                                    <div class="fw-bold">باسم يوسف</div>
-                                    <small>آخر زيارة: 12 مايو 2024</small>
+                                        <div class="last-visit">
+                                            <div>
+                                                <small class="d-block text-muted">آخر زيارة</small>
+                                                <span class="fw-bold text-primary" style="font-size: 0.9rem;">23 أبريل
+                                                    2026</span>
+                                            </div>
+                                            <button class="btn btn-sm btn-light rounded-pill">
+                                                <i class="bi bi-eye"></i> الملف الكامل
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="avatar blue"> ب ي</div>
-                            </div>
-                            <div
-                                class="patient-item d-flex align-items-center justify-content-between mb-3 p-3 rounded-4">
-                                <i class="bi bi-chevron-left"></i>
-                                <div class="flex-grow-1 me-3">
-                                    <div class="fw-bold">بسمة يسري</div>
-                                    <small>آخر زيارة: 12 مايو 2024</small>
-                                </div>
-                                <div class="avatar blue"> ب ي</div>
-                            </div>
-
-                            <div class="text-center mt-4 fw-bold view-all">
-                                عرض جميع الملفات
                             </div>
 
                         </div>
                     </div>
                     <p>...</p>
-
-                    <div id="list-item-3" class="prescription-card p-4 mt-5">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <div>
-                                <h4 class="fw-bold mb-1">وصفة طبية جديدة</h4>
-                                <small class="text-muted">المريض الحالي: زياد عبدالله</small>
-                            </div>
-                        </div>
-
-                        <div class="row g-3 mb-3">
-
-                            <div class="col-md-6">
-                                <label class="form-label">التشخيص السريري</label>
-                                <input class="form-control custom-input" placeholder="مثلاً: التهاب المعدة">
-                            </div>
-
-                            <div class="col-md-6">
-                                <label class="form-label">تاريخ المتابعة</label>
-                                <div class="position-relative">
-                                    <input type="date" class="form-control custom-input">
-                                    <i
-                                        class="bi bi-calendar position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                    <div id="list-item-3" class="prescription-card mt-5">
+                        <div class="patient-brief">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="avatar-sm"
+                                    style="width: 50px; height: 50px; background: var(--primary); color: white;">ز
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">زياد عبدالله</h5>
+                                    <small class="text-muted">ذكر، 28 سنة</small>
                                 </div>
                             </div>
-
+                            <div class="text-end">
+                                <div class="time-text mb-1">#RX-8829</div>
+                                <small class="text-muted">23 أبريل 2026</small>
+                            </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">الأدوية والعلاجات</label>
-                            <textarea class="form-control custom-input" rows="3"
-                                placeholder="اكتب أسماء الأدوية والجرعات هنا..."></textarea>
+                        <div class="prescription-body">
+                            <div class="mb-5">
+                                <label><i class="bi bi-activity me-2"></i> التشخيص </label>
+                                <input type="text" class="form-control prescription-input"
+                                    placeholder="مثلاً: نزلة معوية حادة...">
+                            </div>
+
+                            <div class="mb-5">
+                                <label><i class="bi bi-capsule-pill me-2"></i> الأدوية والعلاجات</label>
+                                <textarea class="form-control prescription-input" rows="4"
+                                    placeholder="1. الدواء (التركيز) - الجرعة - المدة..."></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label><i class="bi bi-journal-text me-2"></i> تعليمات إضافية</label>
+                                <textarea class="form-control prescription-input" rows="2"
+                                    placeholder="مواعيد الأكل، تعليمات الراحة..."></textarea>
+                            </div>
                         </div>
 
-                        <div class="mb-4">
-                            <label class="form-label">تعليمات النظام الغذائي والملاحظات</label>
-                            <textarea class="form-control custom-input large-textarea"
-                                placeholder="اكتب التعليمات هنا..."></textarea>
+                        <div class="d-flex justify-content-end gap-3 mt-4">
+                            <button class="btn btn-primary px-5 py-3 shadow-sm" style="border-radius: 15px;">
+                                <i class="bi bi-printer-fill me-2"></i> اعتماد وإصدار الوصفة
+                            </button>
                         </div>
-
-                        <div class="d-flex gap-3">
-                            <button class="btn btn-primary custom-btn">إصدار الوصفة</button>
-                            <button class="btn btn-secondary custom-btn-outline">مسودة</button>
-                        </div>
-
                     </div>
                     <br>
                 </div>

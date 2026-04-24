@@ -115,6 +115,7 @@ body {
     top: 70px;
 }
 
+
 .container-appointment {
     height: 100%;
     position: relative;
@@ -570,3 +571,389 @@ textarea.custom-input {
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
+.container-fluid {
+    padding: 20px 30px;
+}
+
+.card, .container-appointment, .prescription-card {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+    
+}
+.naVV {
+    border-left: 1px solid var(--outline-variant);
+    border-radius: 25%;
+}
+
+
+
+body {
+    font-family: 'Cairo', sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 16px;
+}
+
+
+.container-appointment, .card-custom, .prescription-card {
+    border: none; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); 
+    background: none;
+}
+
+
+.custom-input:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 63, 135, 0.1);
+}
+
+.profile_img {
+    border: 4px solid var(--primary-fixed);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+.appointment-card {
+    background: white;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid var(--surface-high); 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.appointment-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 24px rgba(0, 45, 88, 0.08); 
+}
+.prescription-card {
+    background: white;
+    border-radius: 30px;
+    padding: 35px;
+    box-shadow: 0 20px 50px rgba(0, 45, 88, 0.05);
+    border: 1px solid var(--surface-high);
+}
+
+.patient-brief {
+    background: var(--surface-low);
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prescription-body {
+    border-right: 3px solid var(--primary-fixed-dim);
+    padding-right: 25px;
+    margin-top: 20px;
+}
+
+.prescription-body label {
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.prescription-input {
+    border: none;
+    border-bottom: 2px dashed var(--outline-variant); 
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 5px;
+    font-size: 1.1rem;
+    color: var(--on-surface);
+}
+
+.prescription-input:focus {
+    box-shadow: none;
+    border-bottom-color: var(--primary);
+    background: var(--surface-lowest);
+}
+
+.prescription-body {
+    background-image: radial-gradient(var(--outline-variant) 0.5px, transparent 0.5px);
+    background-size: 20px 20px;  
+    background-position: left top;
+}
+
+.btn-primary.shadow-sm {
+    background: linear-gradient(135deg, var(--primary), var(--primary-container));
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary.shadow-sm:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 63, 135, 0.2) !important;
+}
+
+
+.prescription-input:focus {
+    border-bottom-style: solid; 
+    border-bottom-width: 2px;
+}
+.prescription-input {
+    resize: none; 
+    overflow: hidden; 
+    min-height: 100px; 
+}
+
+.records-container {
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+}
+
+.patient-record-card {
+    background: white;
+    border-radius: 24px;
+    padding: 20px;
+    border: 1px solid var(--surface-high);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    cursor: pointer;
+}
+
+.patient-record-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 45, 88, 0.08);
+    border-color: var(--primary-fixed-dim);
+}
+
+.record-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.record-avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 18px;
+    background: var(--primary-fixed);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.record-info h6 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--on-surface);
+}
+
+.record-info small {
+    color: var(--outline);
+}
+
+.record-stats {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.stat-pill {
+    background: var(--surface-low);
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--on-surface-variant);
+}
+
+.last-visit {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--outline-variant);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.patient-search-item {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid var(--surface-high) !important;
+}
+
+.patient-search-item:hover {
+    background-color: var(--surface-low);
+    border-color: var(--primary-fixed-dim) !important;
+}
+
+.patient-search-item.active-result {
+    background-color: var(--primary-fixed);
+    border-color: var(--primary) !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.search-results-list::-webkit-scrollbar-thumb {
+    background: var(--outline-variant);
+    border-radius: 10px;
+}
+
+
+
+.availability-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 25px;
+    border: 1px solid white;
+    box-shadow: 0 15px 35px rgba(0, 45, 88, 0.05);
+}
+
+.panel-header h5 {
+    color: var(--nav);
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+
+.panel-header p {
+    font-size: 0.85rem;
+    color: var(--outline);
+    margin-bottom: 20px;
+}
+
+.toggle-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.period-tab {
+    cursor: pointer;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.period-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--surface-low);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.period-info .name {
+    display: block;
+    font-weight: 700;
+    color: var(--nav);
+}
+
+.period-info .time {
+    font-size: 0.75rem;
+    color: var(--outline);
+}
+
+.status-dot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+input:checked + .period-tab {
+    background: var(--nav);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 45, 88, 0.2);
+}
+
+input:checked + .period-tab .period-icon {
+    background: var(--secondary-fixed);
+    color: var(--nav);
+}
+
+input:checked + .period-tab .name,
+input:checked + .period-tab .time {
+    color: white;
+}
+
+input:checked + .period-tab .status-dot {
+    background: #4caf50;
+    box-shadow: 0 0 8px #4caf50;
+}
+
+.update-pulse-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.update-pulse-btn:hover {
+    background: var(--nav);
+}
+
+.btn-done-message {
+    width: 100%;
+    padding: 14px 20px;
+    background: #0d6efd; 
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-done-message:hover {
+    background: #0b5ed7;
+    box-shadow: 0 8px 15px rgba(13, 110, 253, 0.25);
+}
+
+.btn-done-message i {
+    transition: transform 0.4s ease;
+}
+
+.btn-done-message:hover i {
+    transform: translate(5px, -5px) rotate(-10deg);
+}
+
+.btn-done-message:active {
+    transform: scale(0.98);
+}

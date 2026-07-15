@@ -88,6 +88,7 @@ http://localhost:5173
 ## 👥 Project Team
 
 - **Kerolos Daoud**
+  📧 kyroll0sdaoud@gmail.com 
 - **Ahmed Abdallah Ahmed Fouad Faisal**  
   📧 ahmedelbehairy1617@gmail.com
 

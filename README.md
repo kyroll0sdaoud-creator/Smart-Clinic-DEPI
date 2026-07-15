@@ -92,7 +92,6 @@ http://localhost:5173
 
 ---
 
-## 👥 Project Team
 
 ## 👥 Project Team
 

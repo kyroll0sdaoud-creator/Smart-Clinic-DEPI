@@ -1,0 +1,95 @@
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: #1a2a3a;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 14px;
+  z-index: 100;
+}
+
+.sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.sidebar .nav-link i {
+  width: 18px;
+  text-align: center;
+}
+
+.sidebar-profile img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+}
+
+.btn-book {
+  background: #1a6fb5;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 11px;
+  font-family: "Cairo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-book:hover {
+  background: #104c81;
+}
+
+.sidebar-link {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+}
+
+.sidebar-link.logout {
+  color: #ef4444;
+}
+
+.sidebar-link:hover {
+  color: #fff;
+}
+.profile-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  font-size: 36px;
+}

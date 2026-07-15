@@ -1,0 +1,41 @@
+.appointment-card {
+  background: #1a6fb5;
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.appointment-badge {
+  background: rgba(255,255,255,.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.appointment-card h4{
+  margin-bottom:20px;
+}
+
+.appointment-info{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.appointment-item{
+  background:rgba(255,255,255,.15);
+  padding:10px 15px;
+  border-radius:10px;
+}
+
+.appointment-item i{
+  margin-left:8px;
+}
+.doctor-specialty {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-top: -10px;
+  margin-bottom: 18px;
+}

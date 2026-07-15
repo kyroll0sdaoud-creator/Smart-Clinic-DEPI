@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+.register-page {
+    direction: rtl;
+    text-align: right;
+    font-family: "Cairo", sans-serif;
+}
+
+#main-div {
+    width: 100%; 
+    max-width: 900px; 
+    
+    margin: 120px auto;
+    padding: 0px;
+    border-radius: 30px;
+    border-style: none;
+    font-family: "Cairo", sans-serif;
+    font-weight: 500;
+    box-shadow: 0 0 15px 5px #003f8713;
+    overflow: hidden; 
+}
+
+#main-div #half-right {
+    background-color: rgb(255, 254, 254);
+}
+
+#main-div #half-right h3 {
+    color: #003f87dc;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#main-div #half-right form #submit {
+    width: 100%;
+    background-color: #003f87dc;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    border-radius: 12px;
+    border-style: none;
+    padding: 15px 25px;
+}
+
+#main-div #half-right #note {
+    text-align: center;
+}
+
+#main-div #half-right #note a {
+    text-decoration: none;
+    color: #003f87e8;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#main-div #half-right form input {
+    background-color: #83bcfc38;
+    padding: 10px;
+}
+
+#main-div #half-right form #user-type .btn {
+    background: #83bbfcf3;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-style: none;
+}
+
+#main-div #half-left {
+    background-image: url(/src/assets/unnamed.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    
+}
+
+#main-div #half-left #text-div {
+    background-color: rgba(0, 63, 135, 0.85); 
+    height: 100%;
+    width: 100%;
+}
+
+#main-div #half-left #text-div h1 {
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+}
+
+#main-div #half-left #text-div p,
+#main-div #half-left #text-div #icons {
+    color: white;
+}
+
+
+
+#main-div #half-left #text-div h1 {
+    padding: 40px 30px 15px 30px; 
+}
+
+#main-div #half-left #text-div p {
+    padding: 5px 30px 20px 30px;
+}
+
+
+@media (min-width: 768px) {
+    #main-div #half-left #text-div h1 {
+        padding: 150px 40px 30px 60px; 
+        font-size: 2.5rem;
+    }
+    
+    #main-div #half-left #text-div p {
+        padding: 5px 60px 30px 60px;
+    }
+    
+    #main-div #half-left #text-div #icons {
+        margin-right: 60px;
+        padding-bottom: 60px;
+    }
+}

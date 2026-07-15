@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "name": "ahmed",
+      "email": "ahmed2005@gmail.com",
+      "phone": "01234567891",
+      "typeOfUser": "طبيب",
+      "password": "24Ss24#",
+      "check_password": "24Ss24#",
+      "id": "W-G5MAydQ4E"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

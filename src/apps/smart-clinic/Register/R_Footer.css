@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.gstatic.com');
+
+.register-footer {
+    background-color: #f3faff;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.register-footer .container #main-text {
+    color: #003f87e8;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.register-footer .container .d-flex a {
+    text-decoration: none;
+    margin: 10px;
+    color: #000000;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.register-footer .container #end-text {
+    color: #000000e8;
+    margin: 10px;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 1rem;
+    font-style: normal;
+}

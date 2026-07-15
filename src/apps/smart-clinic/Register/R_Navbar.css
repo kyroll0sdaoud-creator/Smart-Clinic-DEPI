@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.gstatic.com');
+
+.register-page {
+    background-color: #f3faff;
+}
+
+.register-navbar .navbar {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(15px);
+}
+
+.register-navbar .navbar-brand {
+    color: #003f87;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.register-navbar .navbar .container .collapse .navbar-nav a {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.register-navbar .navbar .container .btn {
+    background-color: #003f87;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    border-radius: 12px;
+    border-color: #000000;
+    padding: 7px 25px;
+}

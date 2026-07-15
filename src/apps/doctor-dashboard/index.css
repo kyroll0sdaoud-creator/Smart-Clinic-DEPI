@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Design tokens (colors, spacing, shadows) + global resets.
+   These CSS variables are used everywhere in App.css via var(--name).
+   ========================================================================== */
+
+:root {
+  /* Brand */
+  --nav: #002d58;
+  --bg: #f3faff;
+  --on-bg: #071e27;
+
+  --primary: #003f87;
+  --on-primary: #ffffff;
+  --primary-container: #0056b3;
+  --on-primary-container: #bbd0ff;
+
+  --secondary: #006a62;
+  --on-secondary: #ffffff;
+  --secondary-container: #81f3e5;
+  --on-secondary-container: #006f66;
+
+  --tertiary: #004850;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #00626c;
+  --on-tertiary-container: #61e0f2;
+
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+
+  /* Surfaces */
+  --surface: #f3faff;
+  --on-surface: #071e27;
+  --surface-variant: #cfe6f2;
+  --on-surface-variant: #424752;
+
+  --outline: #727784;
+  --outline-variant: #c2c6d4;
+
+  --inverse-surface: #1e333c;
+  --inverse-on-surface: #dff4ff;
+  --inverse-primary: #acc7ff;
+
+  --surface-lowest: #ffffff;
+  --surface-low: #e6f6ff;
+  --surface-high: #d5ecf8;
+  --surface-highest: #cfe6f2;
+  --surface-dim: #c7dde9;
+  --surface-bright: #f3faff;
+  --surface-container: #dbf1fe;
+
+  --primary-fixed: #d7e2ff;
+  --primary-fixed-dim: #acc7ff;
+  --on-primary-fixed: #001a40;
+  --on-primary-fixed-variant: #004491;
+
+  --secondary-fixed: #84f5e8;
+  --secondary-fixed-dim: #66d9cc;
+  --on-secondary-fixed: #00201d;
+  --on-secondary-fixed-variant: #005049;
+
+  --tertiary-fixed: #93f1ff;
+  --tertiary-fixed-dim: #56d7e9;
+  --on-tertiary-fixed: #001f23;
+  --on-tertiary-fixed-variant: #004f57;
+
+  --surface-tint: #115cb9;
+
+  /* Typography */
+  --font-main: 'Cairo', sans-serif;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+
+  /* Radii */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 30px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 25px rgba(0, 45, 88, 0.08);
+  --shadow-lg: 0 15px 35px rgba(0, 45, 88, 0.08);
+  --shadow-xl: 0 20px 50px rgba(0, 45, 88, 0.08);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--primary-fixed);
+  color: var(--on-surface);
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.custom-input {
+  background: var(--surface-highest);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  color: var(--on-surface);
+  transition: var(--transition-base);
+  width: 100%;
+}
+
+.custom-input::placeholder {
+  color: var(--outline);
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 5px 15px rgba(0, 63, 135, 0.1);
+  background: var(--surface);
+  transform: translateY(-2px);
+}
+
+.custom-input:hover {
+  border-color: var(--primary-fixed-dim);
+}
+
+textarea.custom-input {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--outline-variant);
+  border-radius: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .page-container {
+    padding: var(--space-4);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-container {
+    padding: var(--space-3);
+  }
+}

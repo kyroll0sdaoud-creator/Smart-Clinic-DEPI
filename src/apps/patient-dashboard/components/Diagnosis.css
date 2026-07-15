@@ -1,0 +1,30 @@
+.diagnosis-card {
+  background: #fff;
+  border: 1px solid #dde8f5;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.diagnosis-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.diagnosis-item {
+  padding: 15px;
+  border: 1px solid #e5eef8;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.diagnosis-item h6 {
+  color: #1a6fb5;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.diagnosis-item p {
+  margin: 0;
+  color: #555;
+  line-height: 1.8;
+}

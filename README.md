@@ -42,14 +42,6 @@ http://localhost:5173
 
 ---
 
-## 👥 Project Team
-
-- Kerolos Daoud
-- Ahmed Abdallah
-- Ahmed Shawki
-- Anton Melad
-- Mousa Mohammed Smart Clinic DEPI
-
 A Smart Clinic Management System built with **React + Vite** as part of the **Digital Egypt Pioneers Initiative (DEPI)**.
 
 ##  Run the Project

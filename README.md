@@ -94,8 +94,17 @@ http://localhost:5173
 
 ## 👥 Project Team
 
-- Kerolos Daoud
-- Ahmed Abdallah
-- Ahmed Shawki
-- Anton Melad
-- Mousa Mohammed
+## 👥 Project Team
+
+- **Kerolos Daoud**
+- **Ahmed Abdallah Ahmed Fouad Faisal**  
+  📧 ahmedelbehairy1617@gmail.com
+
+- **Anton Melad Shouhdy Jaras**  
+  📧 antonmelad100@gmail.com
+
+- **Ahmed Shawki Shaban Mahmoud**  
+  📧 ahmedshawkysh3@gmail.com
+
+- **Mousa Mohamed Elsayed Gaballah**  
+  📧 mousa.mohamed@el-eng.menofia.edu.eg
